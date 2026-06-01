@@ -485,6 +485,38 @@ h3 {
   margin: 18px 0 0;
 }
 
+.use-cases {
+  background: #f2f7f5;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.case-card {
+  min-height: 245px;
+  border: 1px solid rgba(11, 111, 106, 0.18);
+  border-radius: 8px;
+  padding: clamp(20px, 2.6vw, 30px);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.case-meta {
+  margin: 0 0 18px;
+  color: var(--teal-dark);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.case-card p:last-child {
+  margin: 16px 0 0;
+  color: var(--muted);
+}
+
 .work-list {
   border-top: 1px solid var(--line);
 }
@@ -595,6 +627,7 @@ h3 {
   .section-heading,
   .intro-grid,
   .service-grid,
+  .case-grid,
   .work-item,
   .client-strip,
   .contact {
