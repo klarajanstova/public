@@ -327,10 +327,8 @@ h3 {
 }
 
 .client-logo-card.ericsson img {
-  max-width: 186px;
-  max-height: 62px;
-  transform: scale(1.82) translateY(1px);
-  transform-origin: center;
+  max-width: 158px;
+  max-height: 36px;
 }
 
 .client-logo-card.ericsson.logo-fallback::after {
@@ -349,6 +347,20 @@ h3 {
 .client-logo-card.dativery img {
   max-width: 154px;
   max-height: 34px;
+}
+
+.client-logo-card.mpsv {
+  background: #fff;
+}
+
+.client-logo-card.mpsv img {
+  max-width: 150px;
+  max-height: 48px;
+}
+
+.client-logo-card.mpsv.logo-fallback::after {
+  color: #545860;
+  font-size: 1.1rem;
 }
 
 .client-logo-card.csas {
@@ -397,11 +409,6 @@ h3 {
   color: #0046ad;
   font-size: 2rem;
   font-weight: 900;
-}
-
-.text-logo.mpsv {
-  color: #1f5d91;
-  font-size: 1.18rem;
 }
 
 
