@@ -8,3 +8,9 @@ function setHeaderState() {
 year.textContent = new Date().getFullYear();
 setHeaderState();
 window.addEventListener("scroll", setHeaderState, { passive: true });
+
+document.querySelectorAll(".client-logo-card img").forEach((logo) => {
+  logo.addEventListener("error", () => {
+    logo.closest(".client-logo-card")?.classList.add("logo-fallback");
+  });
+});
