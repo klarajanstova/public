@@ -308,11 +308,32 @@
         <div>
           <p class="eyebrow">Kontakt</p>
           <h2 id="contact-title">Pojďme si říct, co potřebujete doručit.</h2>
+          <p class="contact-copy">
+            Napište pár vět k projektu, týmu nebo technickému zadání. Ozvu se zpět na uvedený e-mail.
+          </p>
         </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:klara@janstova.cz">klara@janstova.cz</a>
-          <a class="button secondary" href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a>
-        </div>
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="company-url" action="/thanks.html">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden-field">
+            <label>Company URL <input name="company-url" tabindex="-1" autocomplete="off"></label>
+          </p>
+          <label>
+            Jméno
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            Zpráva
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="contact-actions">
+            <button class="button primary" type="submit">Odeslat zprávu</button>
+            <a class="button secondary" href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a>
+          </div>
+        </form>
       </section>
     </main>
 
