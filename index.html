@@ -163,57 +163,93 @@
 
       <section class="section use-cases" id="use-cases" aria-labelledby="use-cases-title">
         <div class="section-heading">
-          <p class="eyebrow">Use cases</p>
-          <h2 id="use-cases-title">Konkrétní situace, ve kterých umím pomoct</h2>
+          <p class="eyebrow">Praktické zkušenosti</p>
+          <h2 id="use-cases-title">Use cases z enterprise Azure a Java prostředí</h2>
         </div>
         <div class="case-grid">
           <article class="case-card">
-            <p class="case-meta">Cloud & delivery</p>
-            <h3>Stabilizace deploymentů v Kubernetes</h3>
-            <p>
-              Nastavení prostředí, Helm chartů, CI/CD pipeline a release procesu tak, aby aplikace šly
-              nasazovat opakovatelně, dohledatelně a bez ručního chaosu.
-            </p>
+            <p class="case-meta">Azure Container Apps</p>
+            <h3>Deployment Java/Spring Boot aplikací do Azure</h3>
+            <p>Analýza běžících Container Apps, revizí, image tagů, startup chyb a health endpointů.</p>
+            <p class="case-stack">Java 21, Spring Boot, Azure Container Apps, ACR, APIM, Log Analytics, Key Vault</p>
+            <p class="case-result">Přínos: rychlejší dohledání root cause a stabilnější aplikační start v cloud prostředí.</p>
           </article>
           <article class="case-card">
-            <p class="case-meta">Integrace</p>
-            <h3>Java/Spring Boot služby napojené na enterprise systémy</h3>
-            <p>
-              REST/SOAP integrace, build tooling, testy, ladění chyb a provozní detaily, které rozhodují,
-              jestli služba funguje i mimo lokální vývoj.
-            </p>
+            <p class="case-meta">CI/CD</p>
+            <h3>Build, tagování a deploy Docker image</h3>
+            <p>Automatizace buildu backendu, tvorby image, publikace do privátního registru a smoke testu po deployi.</p>
+            <p class="case-stack">Azure DevOps Pipelines, GitLab CI/CD, Docker, ACR, Gradle, YAML</p>
+            <p class="case-result">Přínos: opakovatelný release proces od artefaktu po ověření funkčnosti přes health endpoint.</p>
           </article>
           <article class="case-card">
-            <p class="case-meta">Platform engineering</p>
-            <h3>API gateway, Azure a provozní nastavení</h3>
-            <p>
-              Práce s API managementem, routováním, konfigurací prostředí a napojením aplikací na
-              platformní služby v regulovaném enterprise kontextu.
-            </p>
+            <p class="case-meta">Kubernetes & GitOps</p>
+            <h3>Deployment přes Helm, FluxCD a TEST/PROD konfigurace</h3>
+            <p>Návrh Helm chartů, úpravy values, troubleshooting HelmRelease a oddělení konfigurací pro prostředí.</p>
+            <p class="case-stack">Kubernetes, AKS, Azure Stack HCI, Helm, FluxCD, Kustomization, ACR</p>
+            <p class="case-result">Přínos: čitelný GitOps model pro bezpečné nasazování do více prostředí.</p>
           </article>
           <article class="case-card">
-            <p class="case-meta">Workflow orchestration</p>
-            <h3>Migrace a provoz Temporalu</h3>
-            <p>
-              Přesun workflow orchestration komponent, sladění aplikačního kódu, prostředí a releasů tak,
-              aby migrace proběhla řízeně a týmy se mohly spolehnout na běh workflow.
-            </p>
+            <p class="case-meta">API Management</p>
+            <h3>APIM integrace a routování backendových API</h3>
+            <p>Mapování veřejných API cest na backend endpointy, testování subscription klíčů a diagnostika HTTP chyb.</p>
+            <p class="case-stack">Azure API Management, OpenAPI, Spring Boot REST API, curl, Postman, APIM policies</p>
+            <p class="case-result">Přínos: jasné rozlišení, jestli problém vzniká v backendu, APIM policy nebo routování.</p>
           </article>
           <article class="case-card">
-            <p class="case-meta">Security & auth</p>
-            <h3>Ladění autentizace a integračních chyb</h3>
-            <p>
-              Analýza 401/authorization problémů, JWT/OIDC claimů, aplikačních logů a chování služeb mezi
-              backendem, gatewayí a provozním prostředím.
-            </p>
+            <p class="case-meta">OpenAPI-first</p>
+            <h3>Nové backendové služby podle OpenAPI specifikace</h3>
+            <p>Vytvoření modulu v Java monorepu, generování API vrstvy, napojení service/DB vrstvy a deployment přes GitOps.</p>
+            <p class="case-stack">OpenAPI Generator, Java 21, Spring Boot, Gradle, Docker, Helm, FluxCD, APIM</p>
+            <p class="case-result">Přínos: rychlejší zavedení nového API do existující enterprise platformy.</p>
           </article>
           <article class="case-card">
-            <p class="case-meta">Team delivery</p>
-            <h3>Agilní spolupráce v technickém týmu</h3>
-            <p>
-              Práce ve Scrum týmech, domlouvání priorit, rozpad technických úkolů a průběžná komunikace
-              mezi vývojem, DevOps, analytiky a stakeholdery.
-            </p>
+            <p class="case-meta">Runtime troubleshooting</p>
+            <h3>CrashLoopBackOff, image pull a chyby container runtime</h3>
+            <p>Analýza pod logs, Kubernetes events, readiness/liveness probes, env proměnných a Java agent konfigurace.</p>
+            <p class="case-stack">kubectl, Kubernetes, Helm values, Docker image, Java runtime, APM agent</p>
+            <p class="case-result">Přínos: odlišení aplikační chyby od problému v runtime nebo deployment konfiguraci.</p>
+          </article>
+          <article class="case-card">
+            <p class="case-meta">Observabilita</p>
+            <h3>Monitoring, logy a provozní analýza</h3>
+            <p>Hledání aplikačních logů, práce s KQL, interpretace metrik a návrh provozních dashboardů/reportů.</p>
+            <p class="case-stack">Grafana, Azure Monitor, Log Analytics, KQL, Prometheus, ContainerAppConsoleLogs</p>
+            <p class="case-result">Přínos: lepší viditelnost do incidentů a rychlejší rozhodování při provozních problémech.</p>
+          </article>
+          <article class="case-card">
+            <p class="case-meta">Security & RBAC</p>
+            <h3>Spring Boot security, JWT a administrační API</h3>
+            <p>Oddělení veřejných read-only endpointů od admin části, validace tokenů a práce se scopes/roles claimy.</p>
+            <p class="case-stack">Spring Security, OAuth2 Resource Server, JWT, Entra ID, Azure AD B2C, APIM validate-jwt</p>
+            <p class="case-result">Přínos: bezpečnější administrační backend s role-based access control.</p>
+          </article>
+          <article class="case-card">
+            <p class="case-meta">Edge security</p>
+            <h3>Azure Front Door, WAF a oddělení public/admin přístupu</h3>
+            <p>Kontrola routes, origin groups, custom domén, security policies a omezení admin části na povolené sítě.</p>
+            <p class="case-stack">Azure Front Door, WAF, Custom domains, Azure CLI, APIM, routing</p>
+            <p class="case-result">Přínos: čistší oddělení veřejné a interní části aplikace na infrastrukturní vrstvě.</p>
+          </article>
+          <article class="case-card">
+            <p class="case-meta">Data & networking</p>
+            <h3>PostgreSQL Flexible Server a backend troubleshooting</h3>
+            <p>Ladění connection stringů, DNS/private endpoint problémů, Key Vault konfigurace a startu aplikace proti DB.</p>
+            <p class="case-stack">PostgreSQL Flexible Server, Spring Data/JPA, Azure networking, Private DNS, Key Vault</p>
+            <p class="case-result">Přínos: bezpečnější a praktičtější provoz backendů napojených na databázi.</p>
+          </article>
+          <article class="case-card">
+            <p class="case-meta">Repo & architecture</p>
+            <h3>Konsolidace repozitářů a monorepo strategie</h3>
+            <p>Návrh spojení aplikačního a knihovního Java repozitáře se zachováním historie a jasným oddělením modulů.</p>
+            <p class="case-stack">Git, Azure DevOps Repos, GitLab, Java/Spring Boot, Gradle, git subtree</p>
+            <p class="case-result">Přínos: jednodušší správa závislostí a jasnější vztah mezi consumer aplikací a knihovnou.</p>
+          </article>
+          <article class="case-card">
+            <p class="case-meta">IaC & API testing</p>
+            <h3>Infrastruktura jako kód, mockování a validace endpointů</h3>
+            <p>Návrh Azure infrastruktury, práce se secrets, mock endpointy v APIM a validace requestů/response.</p>
+            <p class="case-stack">Terraform, Bicep, Azure CLI, APIM, JSON, REST API, Bruno, Postman</p>
+            <p class="case-result">Přínos: rychlejší integrační testování a opakovatelnější správa cloud prostředí.</p>
           </article>
         </div>
       </section>
