@@ -337,11 +337,11 @@ h3 {
 }
 
 .client-logo-card.dativery {
-  background: #101417;
+  background: #fff;
 }
 
 .client-logo-card.dativery.logo-fallback::after {
-  color: #fff;
+  color: #17272b;
 }
 
 .client-logo-card.dativery img {
