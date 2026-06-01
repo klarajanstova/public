@@ -326,6 +326,16 @@ h3 {
   font-size: 1.12rem;
 }
 
+.client-logo-card.creditas img {
+  max-width: 150px;
+  max-height: 44px;
+}
+
+.client-logo-card.creditas.logo-fallback::after {
+  color: #1f355e;
+  font-size: 0.95rem;
+}
+
 .client-logo-card.ericsson img {
   max-width: 158px;
   max-height: 36px;
