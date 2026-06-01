@@ -245,7 +245,7 @@ h3 {
 
 .client-strip {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: minmax(150px, auto) minmax(0, 1fr);
   gap: clamp(18px, 4vw, 44px);
   align-items: center;
   border-bottom: 1px solid var(--line);
@@ -275,33 +275,51 @@ h3 {
   animation: marquee 34s linear infinite;
 }
 
-.client-track span {
+.client-logo-card {
   display: inline-flex;
-  min-width: 132px;
-  min-height: 44px;
+  width: 178px;
+  height: 58px;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(25, 34, 38, 0.13);
   border-radius: 8px;
-  padding: 10px 18px;
+  padding: 10px 16px;
   background: #fbfaf7;
   color: #2d383b;
   box-shadow: 0 8px 24px rgba(25, 34, 38, 0.05);
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   font-weight: 850;
   white-space: nowrap;
 }
 
-.client-track span:nth-child(4n + 1) {
-  color: var(--teal-dark);
+.client-logo-card img {
+  display: block;
+  width: 100%;
+  max-width: 132px;
+  max-height: 34px;
+  object-fit: contain;
 }
 
-.client-track span:nth-child(4n + 2) {
-  color: #6f4f18;
+.client-logo-card.image-logo {
+  background: #fff;
 }
 
-.client-track span:nth-child(4n + 3) {
-  color: #8e3d31;
+.client-logo-card.tmobile img {
+  max-width: 146px;
+}
+
+.text-logo {
+  letter-spacing: 0;
+}
+
+.text-logo.csas {
+  color: #ad1f2b;
+}
+
+.text-logo.o2 {
+  color: #0046ad;
+  font-size: 1.45rem;
+  font-weight: 900;
 }
 
 @keyframes marquee {
