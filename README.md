@@ -1,6 +1,6 @@
 # janstova.cz
 
-Osobní portfolio Kláry Janštové: DevOps, cloud infrastruktura, CI/CD, Kubernetes a Java/Spring Boot backend.
+Osobní portfolio Kláry Janstové: DevOps, cloud infrastruktura, CI/CD, Kubernetes a Java/Spring Boot backend.
 
 ## Lokální spuštění
 
